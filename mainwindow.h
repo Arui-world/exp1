@@ -47,6 +47,8 @@ private slots:
 
     void on_btnClearAll_clicked();
 
+    void on_btnOpposite_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

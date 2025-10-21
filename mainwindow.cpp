@@ -145,7 +145,7 @@ void MainWindow::btnUnaryOperatorClicked()
             result=sqrt(result);
         }
         operand=QString::number(result);
-        ui->display->setText(QString::number(result));
+        ui->display->setText(operand);
     }
 }
 
@@ -179,5 +179,17 @@ void MainWindow::on_btnClearAll_clicked()
     operand.clear();
     ui->display->setText(operand);
     ui->statusbar->showMessage(QString("operands is %1,opcode is %2").arg(operands.size()).arg(opcodes.size()));
+}
+
+
+void MainWindow::on_btnOpposite_clicked()
+{
+    if(operand!=""){
+        double result=operand.toDouble();
+        operand="";
+        result=0-result;
+        operand=QString::number(result);
+        ui->display->setText(operand);
+    }
 }
 
