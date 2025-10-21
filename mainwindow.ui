@@ -6,12 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>422</width>
-    <height>333</height>
+    <width>451</width>
+    <height>364</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>计算器-陈锐-2023414290105</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
   </property>
   <property name="styleSheet">
    <string notr="true">QPushButton{
@@ -370,7 +373,7 @@ font-size:48pt;
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>422</width>
+     <width>451</width>
      <height>18</height>
     </rect>
    </property>

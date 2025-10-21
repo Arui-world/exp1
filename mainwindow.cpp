@@ -144,6 +144,7 @@ void MainWindow::btnUnaryOperatorClicked()
         else if(op=="√"){
             result=sqrt(result);
         }
+        operand=QString::number(result);
         ui->display->setText(QString::number(result));
     }
 }
