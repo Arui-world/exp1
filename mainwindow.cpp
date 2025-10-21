@@ -94,7 +94,7 @@ void MainWindow::btnNumClicked()
 void MainWindow::on_btnPeriod_clicked()
 {
 
-    if(!operand.contains(".")){
+    if(!operand.contains(".")&&!operand.isEmpty()){
         operand+= qobject_cast<QPushButton *>(sender())->text();
     }
     ui->display->setText(operand);
